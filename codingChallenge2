@@ -1,0 +1,26 @@
+/////////////////////////////////////////
+// CODING CHALLENGE 2
+
+var birthYears = [2010, 1991, 1988, 1985, 1963, 1957];
+var ages = [];
+
+console.log(birthYears);
+
+for(var i = 0; i < birthYears.length; i++){
+    ages.push(2018 - birthYears[0]);
+    ages.push(2018 - birthYears[1]);
+    ages.push(2018 - birthYears[2]);
+    ages.push(2018 - birthYears[3]);
+    ages.push(2018 - birthYears[4]);
+    ages.push(2018 - birthYears[5]);
+    
+    console.log(ages[i]);
+}
+
+for(var i = 0; i < ages.length; i++){
+    if(ages[i] >= 18) {
+        console.log(ages[i] + ' is full age.');
+    }else{
+        console.log(ages[i] + ' is not full age.');
+    }
+}
